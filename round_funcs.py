@@ -1,14 +1,15 @@
 from init_tables import *
 
 
+# 라운드 함수 클래스
 class round_func:
    def __init__(self, R, key, parity_drop_1, parity_drop_2, shift_key, subkey_box, parity_box, count):
-      self.__pc1 = parity_drop_1
-      self.__pc2 = parity_drop_2
-      self.__shift_key = shift_key
+      self.__pc1 = parity_drop_1  # 키 압축 1
+      self.__pc2 = parity_drop_2  # 키 압축 2
+      self.__shift_key = shift_key  # 비트 옮김
       self.__sbox = subkey_box
       self.__pbox = parity_box
-      self.__r = R
+      self.__r = R  # 라운드(MAX: 16)
       self.__key = key
       self.current_n = count
       self.result = ""
