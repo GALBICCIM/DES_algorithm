@@ -1,1 +1,1 @@
-__all__ = ["main", "round_funcs", "init_tables"]
+__all__ = ["cryptions", "init_tables", "main", "round_funcs", "text_translation"]
