@@ -1,6 +1,3 @@
-from init_tables import *
-
-
 # 라운드 함수 클래스
 class round_func:
    def __init__(self, R, key, parity_drop_1, parity_drop_2, shift_key, subkey_box, parity_box, count):
@@ -113,6 +110,6 @@ class round_func:
       e_r = self.expansion_R()
       s_g = self.subkey_generator()
       subkey_xor = bin(int(e_r, 2) ^ int(s_g, 2))[2:].zfill(48)
-      subkey_sbox = self.s_box(subkey_xor)
-      self.result = self.p_box(subkey_sbox)
+      subkey_sbox = self.subkey_box(subkey_xor)
+      self.result = self.parity_box(subkey_sbox)
    
