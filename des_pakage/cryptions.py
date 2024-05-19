@@ -1,6 +1,7 @@
-from round_funcs import *
+from des_pakage.round_funcs import *
 
 
+# 암호화 및 복호화 클래스
 class DES:
    def __init__(self, plain_text, key, num_round, parity_drop_1, parity_drop_2, shift_key, subkey_box, parity_box):
       self.__plaintext = plain_text

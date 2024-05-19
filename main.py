@@ -1,6 +1,6 @@
-from init_tables import *
-from text_translation import *
-from cryptions import DES
+from des_pakage.init_tables import *
+from des_pakage.text_translation import *
+from des_pakage.cryptions import DES
 
 
 # TEST
