@@ -18,7 +18,6 @@ if __name__ == "__main__":
    print("암호화된 이진수 값 :: ", object.resulttext)
    print("이진수 암호문을 문자로 변환 :: ", byte_to_str(object.resulttext))
    
-   # TODO: 복호화 고치기
    object_2 = DES(object.resulttext, key, 16, parity_drop_1, parity_drop_2, shift_key, subkey_box, parity_box)
    print("\n<<복호화 시작>>")
    
